@@ -9,7 +9,7 @@ updateduser = {
 }
 def updateuser():
     try:
-        requests.put(url,data=updateduser)
+        requests.put(url + "/145",json=updateduser)
     except Exception as e:
         print(e)
         
